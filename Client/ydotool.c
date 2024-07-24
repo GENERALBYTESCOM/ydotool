@@ -131,7 +131,7 @@ int main(int argc, char **argv) {
 		{"version", no_argument, 0, 'V'},
 	};
 
-	int opt = getopt_long(argc, argv, "hV", long_options, NULL);
+/*	int opt = getopt_long(argc, argv, "hV", long_options, NULL);
 	if (opt != -1)
 	{
 		switch (opt) {
@@ -147,8 +147,11 @@ int main(int argc, char **argv) {
 				puts("Not a valid option\n");
 				show_help();
 				exit(1);
+				
 		}
 	}
+
+	*/
 
 	int (*tool_main)(int argc, char **argv) = NULL;
 
